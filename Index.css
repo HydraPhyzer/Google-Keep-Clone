@@ -58,6 +58,8 @@ hr
     background-color: #F1F3F4;
     padding: 10px 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 .Search-Shadow
 {
@@ -90,4 +92,82 @@ hr
     transform:rotate(360deg);
     color: white;
     transition: all .25s ease;
+}
+
+/* ================ */
+.All-Notes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+.Note-Box
+{
+    position: relative;
+    height:200px;
+    width: 200px;
+    background-color: #F1F3F4;
+    border: 3px solid #FFBA00;
+    margin: 20px;
+}
+.Note-Text
+{
+    text-align: justify;
+    color: black;
+    width:100%;
+    height: 100%;
+    word-wrap: break-word;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+.Note-Box .Operations
+{
+    position: relative;
+    height: 20px;
+    z-index: 1000;
+}
+.Note-Box  .Operations .Images
+{
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    height: 100%;
+    height:fit-content;
+}
+.Note-Box .Operations img
+{
+    width: 20px;
+    height:20px;
+    top: 5px;
+    right: 5px;
+}
+textarea
+{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+#Area
+{
+    color: black;
+    padding: 10px;
+    height: 174px;
+    outline: none;
+    border: none;
+    background-color: #F1F3F4;
+}
+#Area:focus
+{
+    outline: none;
+}
+.Note-Text
+{
+    display: none;
+}
+.Del:hover , .Edit:hover
+{
+    cursor: pointer;
+    transform: scale(1.3);
 }
